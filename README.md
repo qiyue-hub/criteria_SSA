@@ -16,6 +16,8 @@ This repository currently hosts **visualizations**. Code and dataset will be add
 
 **Plain descriptions** are the outputs of Qwen3-VL-Flash using ``Describe this image for skill assessment.'' as prompt. We observe that the plain descriptions tend to be more appearance-oriented, uses incorrect terminology, and contains errors.
 
+---
+
 ## Qualitative Example 1
 
 ### 1. Example image (key frames)
