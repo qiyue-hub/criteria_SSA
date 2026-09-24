@@ -103,9 +103,9 @@ Instrument: micro toothed forceps for scleral flap holding
 
 Margin: relatively regular
 
-Size: slightly small (compared with Case 1, the area is markedly smaller than approximately 4×3 mm yet larger than the "undersized" flaps in Case 3 and Case 4; closest to Case 1)
+Size: slightly small (compared with Example 1, the area is markedly smaller than approximately 4×3 mm yet larger than the "undersized" flaps in Example 3 and Example 4; closest to Example 1)
 
-Thickness: mildly uneven (local thinning is observed; overall thickness fails to meet the uniform 1/2–3/4 thickness criterion, resembling the "mildly uneven and relatively thin" feature in Case 2)
+Thickness: mildly uneven (local thinning is observed; overall thickness fails to meet the uniform 1/2–3/4 thickness criterion, resembling the "mildly uneven and relatively thin" feature in Example 2)
 
 Limbus: no (posterior dissection)
 
@@ -171,7 +171,7 @@ Instrument: non-toothed forceps
 
 Margin: relatively regular
 
-Size: approximately 4×3 mm (closest to Case 2)
+Size: approximately 4×3 mm (closest to Example 2)
 
 Thickness: uniform, approximately 1/2 to 3/4 of scleral thickness
 
