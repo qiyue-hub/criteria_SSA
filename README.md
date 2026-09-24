@@ -10,6 +10,12 @@ This repository currently hosts **visualizations**. Code and dataset will be add
 
 ---
 
+Example images and ground-truth scores are from our dataset.
+
+Predictions are from the outputs of our framework using Qwen3-VL-Flash and Qwen3.8-Flash. The predicted scores and reasons are the output of the criteria grounding module. The descriptions are the output of the exemplar learning module.
+
+Plain descriptions are the outputs of Qwen3-VL-Flash using ``Describe this image for skill assessment.'' as prompt. We observe that the plain descriptions tend to be more appearance-oriented, uses incorrect terminology, and contains errors.
+
 ## Qualitative Example 1
 
 ### 1. Example image (key frames)
@@ -43,7 +49,7 @@ Limbus: absent (posterior sectioning)
 Tear: none
 
 
-### 4. Direct description
+### 4. Plain description
 
 This image displays a surgical/manipulation scene of an artificial or animal eyeball (or ocular tissue model) under a high-power microscope, commonly used for medical education, ophthalmic surgical training or biological experiment teaching. Below is a detailed description from the perspective of professional skill assessment, applicable to evaluating the operator’s proficiency in anatomical cognition, fine manipulation, aseptic awareness and clinical thinking.
 
