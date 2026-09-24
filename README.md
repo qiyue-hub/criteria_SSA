@@ -53,8 +53,6 @@ Tear: none
 
 This image displays a surgical/manipulation scene of an artificial or animal eyeball (or ocular tissue model) under a high-power microscope, commonly used for medical education, ophthalmic surgical training or biological experiment teaching. Below is a detailed description from the perspective of professional skill assessment, applicable to evaluating the operator’s proficiency in anatomical cognition, fine manipulation, aseptic awareness and clinical thinking.
 
----
-
 🔹 **Analysis of Core Image Elements:**
 
 1. **Manipulation Target:**
@@ -85,8 +83,6 @@ This image displays a surgical/manipulation scene of an artificial or animal eye
    
    - No obvious blood stains or contamination traces, suggesting basic aseptic principles were followed during manipulation.
 
----
-
 🔹 **Assessable Skill Dimensions:**
 
 | Dimension | Assessment Criteria |
@@ -97,8 +93,6 @@ This image displays a surgical/manipulation scene of an artificial or animal eye
 | **Emergency Response Capacity** | If captured from real surgical video, evaluate timely management of adverse events (e.g., posterior capsule rupture, hemorrhage control); if derived from training models, examine strategy adjustment in response to predefined "complications". |
 | **Safety Awareness** | Maintain tissue hydration and intraocular pressure, and prevent hazardous behaviors such as unintended instrument entry beneath the retina; no blind exploration or forceful traction during manipulation. |
 
----
-
 🔹 **Potential Educational Value and Recommendations:**
 
 - ✅ Suitable for assessing trainee performance on minimally invasive ophthalmic simulation platforms;
@@ -108,8 +102,6 @@ This image displays a surgical/manipulation scene of an artificial or animal eye
 - ⚠️ Supplementary annotations are recommended: manipulation step numbers, tissue labels, intended objectives (e.g., "remove residual cortex"), timestamps, to facilitate standardized scoring sheet construction;
   
 - 🔧 For instructional demonstration, arrows/text annotations of key anatomical landmarks may be overlaid on the image to improve learning efficiency.
-
----
 
 📌 **Summary Comment (Example):** 
 > "This image captures a highly refined ophthalmic manipulation. The operator demonstrates strong anatomical recognition and instrument control. Stable forceps grasping with accurate positioning causes no tissue injury, reflecting solid foundational training. Further training on identification and management strategies for 'abnormal tissues' (such as the bluish-white turbid region in the image) is recommended to enhance competency for complex cases."
