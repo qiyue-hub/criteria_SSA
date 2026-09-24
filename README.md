@@ -58,21 +58,31 @@ This image displays a surgical/manipulation scene of an artificial or animal eye
 🔹 **Analysis of Core Image Elements:**
 
 1. **Manipulation Target:**
+
    - An incised or exposed ocular structure, with intact cornea (transparent anterior segment), iris (dark annular structure), lens region (currently obscured or removed), and posterior pole retina/vitreous cavity observable.
+   
    - Pale blue/white turbid material covers the ocular surface — suspected vitreous opacity, artificial gel (e.g., silicone oil or sodium hyaluronate), or simulated postoperative exudate/inflammatory response; dark brown plaques are visible on the right, which may represent retinal hemorrhage, pigmentation or simulated lesional tissue.
 
 2. **Instruments:**
+   
    - A pair of precision forceps (e.g., angled ophthalmic forceps or needle holder) grips a small piece of white/semitransparent tissue near the capsular bag or anterior chamber region.
+   
    - The forceps feature sharp, slender tips consistent with minimally invasive ophthalmic instruments; black handles with surface reflection indicate fine polishing and cleanliness.
 
 3. **Manipulation Status:**
+   
    - The motion is at the "fine grasping" stage rather than rough grabbing, demonstrating awareness for protecting fragile tissues (e.g., lens cortex, vitreous base);
+   
    - The forceps are positioned precisely without obvious contact with the cornea or iris margin, indicating sound spatial localization capability of the operator;
+   
    - Liquid reflection spots are visible in the background, confirming a liquid environment within the anterior chamber or vitreous cavity (e.g., normal saline or balanced salt solution), consistent with surgical/experimental conditions.
 
 4. **Environmental and Technical Background:**
+   
    - The overall image is yellowish-white, possibly resulting from microscope light filter effects or imaging under low-illumination conditions;
+   
    - Clear visual field with focus centered on the manipulation site, implying adoption of a high-resolution microscopic system (e.g., surgical microscope or stereomicroscope);
+   
    - No obvious blood stains or contamination traces, suggesting basic aseptic principles were followed during manipulation.
 
 ---
@@ -92,8 +102,11 @@ This image displays a surgical/manipulation scene of an artificial or animal eye
 🔹 **Potential Educational Value and Recommendations:**
 
 - ✅ Suitable for assessing trainee performance on minimally invasive ophthalmic simulation platforms;
+  
 - ✅ Can serve as an instructional demonstration case for **grasping techniques during lens extraction**;
+  
 - ⚠️ Supplementary annotations are recommended: manipulation step numbers, tissue labels, intended objectives (e.g., "remove residual cortex"), timestamps, to facilitate standardized scoring sheet construction;
+  
 - 🔧 For instructional demonstration, arrows/text annotations of key anatomical landmarks may be overlaid on the image to improve learning efficiency.
 
 ---
