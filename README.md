@@ -5,74 +5,17 @@ Code and qualitative examples for our ICASSP 2027 submission:
 **Criteria-Grounded Surgical Skill Assessment: A Multimodal Reasoning Framework**
 
 We assess surgical skill as a mapping from **video + scoring criteria** to a **score**.  
-*Exemplar learning* describes key frames; *criteria grounding* compares those descriptions with the criteria to predict a score.
 
-This repository currently hosts **visualizations**. Code will be added here.
+This repository currently hosts **visualizations**. Code and dataset will be added here.
 
 ---
 
-## Qualitative Example 1 (correct prediction)
-
-**Phase:** scleral flap making in trabeculectomy (score range 1–5)
+## Qualitative Example 1
 
 ### 1. Example image (key frames)
 
 <p align="center">
-  <img src="visualizations/example_01/frames.png" width="85%"/>
-</p>
-
-<p align="center"><em>Key frames extracted near the end of the scleral-flap phase.</em></p>
-
-### 2. Ground-truth score
-
-**GT score: 4**
-
-### 3. Prediction (ours)
-
-**Predicted score: 4**
-
-**Reason:** The scleral flap is moderate in size, but thickness is not fully uniform. Shape and completeness are worse than Example 1, fall between Examples 2 and 3, and are less uneven than Example 3. Thickness also does not show the extreme local thinning of Example 4. This matches the scoring gist for score 4 (*moderate in size, but slightly uneven in thickness*).
-
-### 4. Direct description
-
-> This is an image of the scleral flap stage during trabeculectomy. The forceps is located in the upper left part of the image and appears to be a micro-toothless forceps, as the bite surface of the forceps appears to be smooth and has no obvious gear-like protrusions. The tissue that the forceps are holding is the scleral flap, which is moderate in size, but it can be seen from the image that the thickness is not completely uniform, with local irregular thickness.
-
----
-
-## Qualitative Example 2 (correct prediction)
-
-**Phase:** scleral flap making in trabeculectomy (score range 1–5)
-
-### 1. Example image (key frames)
-
-<p align="center">
-  <img src="visualizations/example_02/frames.png" width="85%"/>
-</p>
-
-### 2. Ground-truth score
-
-**GT score: 1**
-
-### 3. Prediction (ours)
-
-**Predicted score: 1**
-
-**Reason:** The flap is visually moderate in size: larger than the too-small flap in Example 3, but not as small and uniform as Example 1. Thickness looks relatively uniform (unlike Example 4) yet does not reach the ideal thickness of Examples 1 and 2. Together these cues support a low score.
-
-### 4. Direct description
-
-> This is an image of the scleral flap stage during trabeculectomy. In the image, we can see that the forceps are located in the upper left part of the image and are micro-toothed forceps. The tissue that the forceps are holding is the scleral flap, and the scleral flap in this image is visually moderate in size.
-
----
-
-## Qualitative Example 3 (failure case)
-
-**Phase:** scleral flap making in trabeculectomy (score range 1–5)
-
-### 1. Example image (key frames)
-
-<p align="center">
-  <img src="visualizations/example_03/frames.png" width="85%"/>
+  <img src="assets/Example1.png" width="85%"/>
 </p>
 
 ### 2. Ground-truth score
@@ -81,20 +24,82 @@ This repository currently hosts **visualizations**. Code will be added here.
 
 ### 3. Prediction (ours)
 
-**Predicted score: 4**
+**Predicted score: 3**
 
-**Reason:** Due to limited resolution and viewing angle, the model treats the flap as relatively large and infers fairly uniform treatment, which over-shoots the expert score. An experienced surgeon can still score this case correctly from the same frames.
+**Reason:** No toothed forceps, no tearing occurred. Size ≈ 4×3 mm, relatively regular margins, tending to grade 4; relatively thin and posteriorly sectioned, tending to grade 3. The lower grade is adopted, resulting in a final grade of 3
+
+**Description:** 
+
+Instrument: Toothless forceps
+
+Margin: Relatively regular
+
+Size: approximately 4×3 mm (closest to Example 2)
+
+Thickness: slightly uneven and relatively thin (closest to Example 2)
+
+Limbus: absent (posterior sectioning)
+
+Tear: none
+
 
 ### 4. Direct description
 
-> This is an image showing the scleral flap stage of trabeculectomy. The forceps are located in the middle and upper part of the image, and they look like toothless microscopic forceps. Due to the limitations of image resolution and angle, the description of the exact type of forceps is somewhat speculative. The size of the scleral flap appears to be relatively large, and the uniformity of its thickness is not easy to determine from the image.
+This image displays a surgical/manipulation scene of an artificial or animal eyeball (or ocular tissue model) under a high-power microscope, commonly used for medical education, ophthalmic surgical training or biological experiment teaching. Below is a detailed description from the perspective of professional skill assessment, applicable to evaluating the operator’s proficiency in anatomical cognition, fine manipulation, aseptic awareness and clinical thinking.
+
+---
+
+🔹 **Analysis of Core Image Elements:**
+
+1. **Manipulation Target:**
+   - An incised or exposed ocular structure, with intact cornea (transparent anterior segment), iris (dark annular structure), lens region (currently obscured or removed), and posterior pole retina/vitreous cavity observable.
+   - Pale blue/white turbid material covers the ocular surface — suspected vitreous opacity, artificial gel (e.g., silicone oil or sodium hyaluronate), or simulated postoperative exudate/inflammatory response; dark brown plaques are visible on the right, which may represent retinal hemorrhage, pigmentation or simulated lesional tissue.
+
+2. **Instruments:**
+   - A pair of precision forceps (e.g., angled ophthalmic forceps or needle holder) grips a small piece of white/semitransparent tissue near the capsular bag or anterior chamber region.
+   - The forceps feature sharp, slender tips consistent with minimally invasive ophthalmic instruments; black handles with surface reflection indicate fine polishing and cleanliness.
+
+3. **Manipulation Status:**
+   - The motion is at the "fine grasping" stage rather than rough grabbing, demonstrating awareness for protecting fragile tissues (e.g., lens cortex, vitreous base);
+   - The forceps are positioned precisely without obvious contact with the cornea or iris margin, indicating sound spatial localization capability of the operator;
+   - Liquid reflection spots are visible in the background, confirming a liquid environment within the anterior chamber or vitreous cavity (e.g., normal saline or balanced salt solution), consistent with surgical/experimental conditions.
+
+4. **Environmental and Technical Background:**
+   - The overall image is yellowish-white, possibly resulting from microscope light filter effects or imaging under low-illumination conditions;
+   - Clear visual field with focus centered on the manipulation site, implying adoption of a high-resolution microscopic system (e.g., surgical microscope or stereomicroscope);
+   - No obvious blood stains or contamination traces, suggesting basic aseptic principles were followed during manipulation.
+
+---
+
+🔹 **Assessable Skill Dimensions:**
+
+| Dimension | Assessment Criteria |
+|------|-----------|
+| **Anatomical Recognition** | Accurately identify key structures including cornea, anterior chamber, lens and vitreous, and comprehend their relative spatial relationships; distinguish normal tissue from pathological/simulated lesional regions. |
+| **Instrument Manipulation Precision** | Stable and gentle forceps grasping without slippage or tissue tearing; reasonable manipulation trajectory to avoid injury to adjacent vital structures (e.g., pupillary margin, ciliary body). |
+| **Operational Standardization** | Appropriate instruments deployed to complete target maneuvers (e.g., lens nucleus extraction, auxiliary vitrectomy); compliance with standard surgical workflows (e.g., continuous curvilinear capsulorhexis or nucleus fragmentation in cataract surgery). |
+| **Emergency Response Capacity** | If captured from real surgical video, evaluate timely management of adverse events (e.g., posterior capsule rupture, hemorrhage control); if derived from training models, examine strategy adjustment in response to predefined "complications". |
+| **Safety Awareness** | Maintain tissue hydration and intraocular pressure, and prevent hazardous behaviors such as unintended instrument entry beneath the retina; no blind exploration or forceful traction during manipulation. |
+
+---
+
+🔹 **Potential Educational Value and Recommendations:**
+
+- ✅ Suitable for assessing trainee performance on minimally invasive ophthalmic simulation platforms;
+- ✅ Can serve as an instructional demonstration case for **grasping techniques during lens extraction**;
+- ⚠️ Supplementary annotations are recommended: manipulation step numbers, tissue labels, intended objectives (e.g., "remove residual cortex"), timestamps, to facilitate standardized scoring sheet construction;
+- 🔧 For instructional demonstration, arrows/text annotations of key anatomical landmarks may be overlaid on the image to improve learning efficiency.
+
+---
+
+📌 **Summary Comment (Example):** 
+> "This image captures a highly refined ophthalmic manipulation. The operator demonstrates strong anatomical recognition and instrument control. Stable forceps grasping with accurate positioning causes no tissue injury, reflecting solid foundational training. Further training on identification and management strategies for 'abnormal tissues' (such as the bluish-white turbid region in the image) is recommended to enhance competency for complex cases."
+
+Customization into concrete scoring rubrics, teaching plans or skill certification templates can be provided upon request.
 
 ---
 
 ## Dataset note
 
-Examples come from porcine trabeculectomy practice videos. Do not upload patient identifiers, faces, or hospital marks.
+Examples come from porcine trabeculectomy practice videos. There are no identifiers, faces, or hospital marks.
 
-## Citation
-
-If you use this repository, please cite the ICASSP 2027 paper (link will be added after submission).
