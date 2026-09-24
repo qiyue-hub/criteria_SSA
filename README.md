@@ -15,7 +15,7 @@ This repository currently hosts **visualizations**. Code and dataset will be add
 ### 1. Example image (key frames)
 
 <p align="center">
-  <img src="assets/Example1.png" width="85%"/>
+  <img src="assets/Example1.jpg" width="85%"/>
 </p>
 
 ### 2. Ground-truth score
